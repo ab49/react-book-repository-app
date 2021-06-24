@@ -18,6 +18,8 @@ const AddBooksList = ({history}) => {
             author: inputAuthorName.current.value,
             publishedDate: inputpublishedDate.current.value
         });
+
+        //insert the book addition code
         axios.post(apiLink, {
             bookName: inputBookName.current.value,
             author: inputAuthorName.current.value,

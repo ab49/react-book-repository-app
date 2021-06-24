@@ -35,7 +35,7 @@ const BooksList = ({history}) => {
         console.log(bookName);
         console.log(author);
 
-        axios.delete('https://v61lntesqa.execute-api.us-east-1.amazonaws.com/default/bookDepoAPIFunction', {
+        axios.delete(apiLink, {
             bookName: bookName,
             authorName: author
         })
