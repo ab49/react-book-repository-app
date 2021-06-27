@@ -13,7 +13,6 @@ import NotFound from './routes/NotFound';
 function App() {
   return (
     <div className="app to-do-app-wrapper">
-      <h1>test  </h1>
       <Router>
         <Switch>
 
