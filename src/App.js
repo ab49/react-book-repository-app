@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from 'react-router-dom';
 
 import BooksList from './routes/BooksList';
@@ -14,20 +13,20 @@ import NotFound from './routes/NotFound';
 function App() {
   return (
     <div className="app to-do-app-wrapper">
+      <h1>test  </h1>
       <Router>
         <Switch>
 
-          <Route path="/add-books">
+          <Route exact path="/add-books">
             <AddBooksList />
           </Route> 
 
-          <Route path="/">
+          <Route exact path="/">
             <BooksList />
           </Route> 
-          
 
-          <Route path="/404" component={NotFound} />
-          <Redirect to="/404" />
+          <Route component={NotFound} />
+
         </Switch>
       </Router>
     </div>

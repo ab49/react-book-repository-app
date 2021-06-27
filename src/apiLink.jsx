@@ -1,3 +1,3 @@
-const apiLink = "https://nl2hpyh4qe.execute-api.us-west-2.amazonaws.com/Production/book"
+const apiLink = "<api-link>";
 
 export default apiLink;

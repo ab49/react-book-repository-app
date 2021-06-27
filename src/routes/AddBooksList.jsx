@@ -8,7 +8,7 @@ const AddBooksList = ({history}) => {
     const inputBookName = useRef(null);
     const inputAuthorName = useRef(null);
     const inputpublishedDate = useRef(null);
-
+    const inputRatings = useRef(null);
 
     const handleFormSubmited = (e) => {
         e.preventDefault();
@@ -23,7 +23,8 @@ const AddBooksList = ({history}) => {
         axios.post(apiLink, {
             bookName: inputBookName.current.value,
             author: inputAuthorName.current.value,
-            publishedDate: inputpublishedDate.current.value
+            publishedDate: inputpublishedDate.current.value,
+            ratings: inputRatings.current.value,
         })
             .then(function (response) {
                 console.log(response);
@@ -36,7 +37,7 @@ const AddBooksList = ({history}) => {
 
     return (
         <div className="container">
-            <h1 className="pb-5">Add To Do List</h1>
+            <h1 className="pb-3 pt-5">Add Book</h1>
 
             <form>
                 <div className="form-group">
@@ -52,6 +53,11 @@ const AddBooksList = ({history}) => {
                 <div className="form-group">
                     <label htmlFor="bookName">Publication Date</label>
                     <input ref={inputpublishedDate} type="text" className="form-control" id="publishedDate" placeholder="Publication Date" />
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="ratings">Ratings</label>
+                    <input ref={inputRatings} type="text" className="form-control" id="ratings" placeholder="Ratings" />
                 </div>
 
                 <button onClick={(e) => { handleFormSubmited(e) }} type="submit" className="btn btn-primary mb-2">Submit</button>
