@@ -113,7 +113,7 @@ const BoookItem = ( { data } ) => {
                         <div className="col-sm-8">
                             <div className="form-group">
                                 <label htmlFor="bookName">Published Date</label>
-                                <input type="text" className="form-control" id="publishedDate" placeholder="Published Date" 
+                                <input type="date" className="form-control" id="publishedDate" placeholder="Published Date" 
                                 defaultValue={dataPublishedDate}
                                 ref={inputPublishedDateRef}
                                 />
@@ -123,7 +123,7 @@ const BoookItem = ( { data } ) => {
                         <div className="col-sm-8">
                             <div className="form-group">
                                 <label htmlFor="bookName">Ratings</label>
-                                <input type="text" className="form-control" id="ratings" 
+                                <input type="number" min="0" max="5" className="form-control" id="ratings" 
                                 placeholder="Ratings"
                                 defaultValue={dataRatings}
                                 ref={inputRatingsRef}
