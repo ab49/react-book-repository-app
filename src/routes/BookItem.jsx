@@ -95,7 +95,7 @@ const BoookItem = ( { data } ) => {
                     </div>
                     {!showEditSection &&
                         <div className="col-sm-2" >
-                            <Link to="/" onClick={(e) => { showEditItem(e)}} className="w-100 btn btn-primary">Edit</Link>
+                            <Link to="/" onClick={(e) => { showEditItem(e)}} className="w-100 btn btn-info">Edit</Link>
                         </div>
                     }
                 </div>
@@ -135,10 +135,10 @@ const BoookItem = ( { data } ) => {
                     </div>
                     <div className="row">
                         <div className="col-sm-2">
-                            <Link to="/" onClick={(e) => { editItem(e, data.bookName, data.author) }} className="w-100 btn btn-primary">Save</Link>
+                            <Link to="/" onClick={(e) => { editItem(e, data.bookName, data.author) }} className="w-100 btn btn-info">Save</Link>
                         </div>
                         <div className="col-sm-12">
-                            <Link to="/" onClick={(e) => { showEditItem(e)}} className="d-block text-primary pt-3">Hide edit section</Link>
+                            <Link to="/" onClick={(e) => { showEditItem(e)}} className="d-block text-primary pt-3">Hide Edit section</Link>
                         </div>
                     </div>
                     </>

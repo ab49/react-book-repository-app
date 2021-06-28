@@ -63,7 +63,7 @@ const AddBooksList = ({ history }) => {
                             <input ref={inputRatings} type="number" min="0" max="5" className="form-control" id="ratings" placeholder="Ratings" />
                         </div>
 
-                        <button onClick={(e) => { handleFormSubmited(e) }} type="submit" className="btn btn-primary mb-2">Submit</button>
+                        <button onClick={(e) => { handleFormSubmited(e) }} type="submit" className="btn btn-info mb-2">Submit</button>
                     </form>
                 </div>
             </div>

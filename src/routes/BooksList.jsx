@@ -27,7 +27,7 @@ const BooksList = () => {
     return (
         <div className="container">
             <h1 className="py-5">Books Repo</h1>
-            <Link to="/add-books" className="btn btn-primary mb-5">Add Books</Link>
+            <Link to="/add-books" className="btn btn-info mb-5">Add Books</Link>
 
             <div className="card-section">
                 

@@ -7,12 +7,13 @@ import {
 
 import BooksList from './routes/BooksList';
 import AddBooksList from './routes/AddBooksList';
-
 import NotFound from './routes/NotFound';
+import Navigation from './Navigation';
 
 function App() {
   return (
     <div className="app to-do-app-wrapper">
+      <Navigation />
       <Router>
         <Switch>
 
